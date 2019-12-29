@@ -1,0 +1,44 @@
+
+<div class="row">
+    <div class='col-md-6 offset-md-3'>
+            <div class='card'>
+                    <div class="card-header">
+                        <h3 class='text-center'>Integer Spiral using Matrix</h3>
+                    </div>
+                    <form class="card-body">
+                        <div class='form-group'>
+                            <label for='limit'>Spiral Limit:</label>
+                            <input type='text' name='limit' placeholder="enter spiral limit" class='form-control'
+                            [(ngModel)]='spiralLimit'/>
+                        </div>
+                
+                        <div class='form-group'>
+                            <label for='spin'>Spin:</label><br/>
+                            <div class='form-check form-check-inline'>
+                                <label for='left' class='form-check-label'>left</label>
+                                <input type='radio' class="form-check-input" value='left' name='spin'
+                                [(ngModel)]='spin'/>
+                            </div>
+                            <div class='form-check form-check-inline'>
+                                <label for='right' class='form-check-label'>right</label>
+                                <input type='radio' class="form-check-input" value='right' name='spin'
+                                [(ngModel)]='spin'/>
+                            </div>
+                        </div>
+                        <button type='button' (click)='handleClick()'>create my spiral</button>
+                    </form>
+                </div>
+    </div>
+</div>
+
+<div class='row'>
+    <div class='offset-md-3 col-md-8'>
+        <div *ngFor='let array of result'>
+            <span *ngFor='let data of array'>
+                {{data|json}}
+            </span>
+        </div>
+    </div>
+</div>
+
+
