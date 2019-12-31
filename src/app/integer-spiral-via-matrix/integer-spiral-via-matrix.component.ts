@@ -23,8 +23,6 @@ export class IntegerSpiralViaMatrixComponent  {
     this.fillMatrixRight(matrixSize,startPoint) :
     this.fillMatrixLeft(matrixSize,startPoint);  
     
-    console.log(this.result);
-    
   }
 
   fillMatrixRight(matrixSize,startPoint){

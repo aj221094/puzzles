@@ -6,7 +6,6 @@ import { FormsModule } from '@angular/forms';
 describe('IntegerSpiralViaMatrixComponent', () => {
   let component: IntegerSpiralViaMatrixComponent;
   let fixture: ComponentFixture<IntegerSpiralViaMatrixComponent>;
-  var arr_odd_left, arr_even_left, arr_even_right, arr_odd_right;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
